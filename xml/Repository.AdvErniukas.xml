@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository>
+	<groups>
+		<group id="2108" name="AdvErniukas">
+			<description>AdvEventsName, City, StartDate, EndDateName</description>
+			<datacomponents>
+				<datacomponent id="{510406b3-e2fe-462b-82a7-ec5a380101da}" name="AdvContactRef">
+					<table>AdvErniukasExtend</table>
+					<columns>*</columns>
+					<key>ContactId</key>
+				</datacomponent>
+				<datacomponent id="{860e2669-bf42-4b70-9541-570a873466e8}" name="AdvErnTavoMama">
+					<table>AdvErnAcountExt</table>
+					<columns>*</columns>
+					<key>ContactID</key>
+				</datacomponent>
+				<datacomponent id="{2e509b31-2072-429b-87a5-dcadb67ed282}" name="Events data component">
+					<table>AdvEvents</table>
+					<columns>Name, City, StartDate, EndDate</columns>
+					<key>Name</key>
+				</datacomponent>
+			</datacomponents>
+			<functionalcomponents>
+				<functionalcomponent id="{bfaf77cb-a208-4120-a720-42acc5938610}" name="AdvErniukasFunctional">
+					<assembly>AdvErniukasEvents</assembly>
+					<class>AdvErniukasEvents.EventValidation</class>
+				</functionalcomponent>
+			</functionalcomponents>
+			<businesscomponents>
+				<businesscomponent id="{5150ca37-9e91-4c23-9b8f-4aa6cc463ca8}" name="AdvErniukasBusiness" namewebservice="">
+					<properties>
+						<property id="{01bcefd5-68f5-4cfb-861e-9d9bd282c728}" name="EventCity">
+							<domainid>{3af9285f-87ca-11d4-895b-009027dc577e}</domainid>
+							<propnamews>EventCity</propnamews>
+						</property>
+						<property id="{28266292-c7f2-446e-9959-6915afaf3dc6}" name="EventEndDate">
+							<domainid>{e67be50d-1a24-11d2-9820-00c04f9546c9}</domainid>
+							<propnamews>EventEndDate</propnamews>
+						</property>
+						<property id="{7f305aa9-d6f4-48bf-a457-7a6dc53643e3}" name="EventName">
+							<domainid>{6d265ad1-9dbb-4b76-adcb-ff0d5fef2781}</domainid>
+							<propnamews>EventName</propnamews>
+						</property>
+						<property id="{02447f51-c302-4b45-bcce-1488f0658af0}" name="EventStartDate">
+							<domainid>{13728123-7e57-11d4-895b-009027dc577e}</domainid>
+							<propnamews>EventStartDate</propnamews>
+						</property>
+					</properties>
+					<componentrelations>
+						<componentrelation id="{a41ae174-a07b-4859-bce0-db57ac3c0cab}" name="Testukas" type="0">
+							<componentid>{2e509b31-2072-429b-87a5-dcadb67ed282}</componentid>
+							<propertyrelations>
+								<propertyrelation id="{57a57325-b6f4-4b01-8506-8c6c874293c8}" type="0" state="0">
+									<propertyid>{01bcefd5-68f5-4cfb-861e-9d9bd282c728}</propertyid>
+									<source>City</source>
+								</propertyrelation>
+								<propertyrelation id="{6f04f77b-1cde-41a8-b293-96c2b3ca781d}" type="0" state="0">
+									<propertyid>{28266292-c7f2-446e-9959-6915afaf3dc6}</propertyid>
+									<source>EndDate</source>
+								</propertyrelation>
+								<propertyrelation id="{20032332-1317-4f13-9fa3-2c7004a9ad70}" type="0" state="0">
+									<propertyid>{7f305aa9-d6f4-48bf-a457-7a6dc53643e3}</propertyid>
+									<source>Name</source>
+								</propertyrelation>
+								<propertyrelation id="{7d0eb29f-05ad-40da-8247-ddcf826f8c53}" type="0" state="1">
+									<propertyid>{7f305aa9-d6f4-48bf-a457-7a6dc53643e3}</propertyid>
+									<source>Name</source>
+								</propertyrelation>
+								<propertyrelation id="{b109aea7-3fa1-47d8-ae29-8d20207a0106}" type="0" state="0">
+									<propertyid>{02447f51-c302-4b45-bcce-1488f0658af0}</propertyid>
+									<source>StartDate</source>
+								</propertyrelation>
+							</propertyrelations>
+						</componentrelation>
+						<componentrelation id="{df281bab-b075-4dde-890b-1ef6456b2c3e}" name="Validation" type="3">
+							<componentid>{bfaf77cb-a208-4120-a720-42acc5938610}</componentid>
+							<propertyrelations>
+								<propertyrelation id="{5650c94b-dcfe-49aa-95ad-6272e0b69d87}" type="1" state="0">
+									<propertyid>{28266292-c7f2-446e-9959-6915afaf3dc6}</propertyid>
+									<source>EventEndDate</source>
+								</propertyrelation>
+								<propertyrelation id="{d9423844-225a-498c-b367-cfc0444ffba5}" type="1" state="0">
+									<propertyid>{02447f51-c302-4b45-bcce-1488f0658af0}</propertyid>
+									<source>EventStartDate</source>
+								</propertyrelation>
+							</propertyrelations>
+						</componentrelation>
+					</componentrelations>
+				</businesscomponent>
+				<businesscomponent id="{224462be-2177-444d-9c07-a3f42c04a9ad}" name="AdvErniukasExtendCustomer" namewebservice="">
+					<properties>
+						<property id="{2b44a598-77d2-46bf-82c0-4e32c1234fad}" name="AdvErniukasFacebook">
+							<domainid>{7de9f4a3-230d-11d2-ae9b-00c04f9553b8}</domainid>
+							<propnamews>FacebookId</propnamews>
+						</property>
+					</properties>
+					<componentrelations>
+						<componentrelation id="{195930f1-5154-4848-8959-20cb9e951c2c}" name="Prapleciam" type="15">
+							<componentid>{5d22c94c-dab0-11d2-af7a-00c04f9553b8}</componentid>
+						</componentrelation>
+						<componentrelation id="{8318068e-5147-488e-8e09-331da4a93872}" name="Reference" type="2">
+							<componentid>{510406b3-e2fe-462b-82a7-ec5a380101da}</componentid>
+							<propertyrelations>
+								<propertyrelation id="{4c17c5d4-d6af-4153-b8bd-5acf543611a1}" type="0" state="0">
+									<propertyid>{2b44a598-77d2-46bf-82c0-4e32c1234fad}</propertyid>
+									<source>FacebookId</source>
+								</propertyrelation>
+								<propertyrelation id="{7b2deeb4-1b9c-432c-b482-e19b86b1b777}" type="0" state="1">
+									<propertyid>{2e3791d3-9821-455c-a77b-7e3b60c9a4b1}</propertyid>
+									<source>ContactId</source>
+								</propertyrelation>
+							</propertyrelations>
+						</componentrelation>
+					</componentrelations>
+				</businesscomponent>
+				<businesscomponent id="{5237ba63-a170-46b5-8741-f8eb1ac3f1aa}" name="AdvErnTavoMama" namewebservice="">
+					<properties>
+						<property id="{80c463ce-2312-4a89-8856-1f46c3ddc9cc}" name="TavoMama">
+							<domainid>{afb5409d-2d72-11d4-8aa5-00c04fb4904a}</domainid>
+							<propnamews>TavoMama</propnamews>
+						</property>
+					</properties>
+					<componentrelations>
+						<componentrelation id="{44b87949-1d16-400f-ad74-c965d1005e60}" name="Data" type="2">
+							<componentid>{860e2669-bf42-4b70-9541-570a873466e8}</componentid>
+							<propertyrelations>
+								<propertyrelation id="{0b2ab556-e0ff-49b4-ab20-47678e0020d4}" type="0" state="0">
+									<propertyid>{80c463ce-2312-4a89-8856-1f46c3ddc9cc}</propertyid>
+									<source>TavoMama</source>
+								</propertyrelation>
+								<propertyrelation id="{3e51524f-7d8f-48cd-a107-d878fe5180e9}" type="0" state="1">
+									<propertyid>{df2c80ed-0a2c-11d4-9ddf-0004ac25befa}</propertyid>
+									<source>ContactID</source>
+								</propertyrelation>
+							</propertyrelations>
+						</componentrelation>
+						<componentrelation id="{623d0e2b-8794-4bd1-82d6-72712a969c54}" name="Extends" type="15">
+							<componentid>{df2c80e9-0a2c-11d4-9ddf-0004ac25befa}</componentid>
+						</componentrelation>
+					</componentrelations>
+				</businesscomponent>
+			</businesscomponents>
+		</group>
+	</groups>
+</repository>

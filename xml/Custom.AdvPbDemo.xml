@@ -1,0 +1,68 @@
+﻿<customsolution code="Training">
+<developer code='5580'>Ernestas Burokas</developer>
+	<title>Training for Advisie</title>
+<description>Description</description>
+<batch>2</batch>
+	<scripts>
+    <createscript>AdvEvents.sql</createscript>
+  </scripts>
+  <toolbar>
+    <button id="1008" default="1">
+      <description termid="0">Erniuko toolbar</description>
+      <link>erniukas.aspx</link>
+      <image>SDK</image>
+      <securitylevel>10</securitylevel>
+    </button>
+  </toolbar>
+
+  <searchlinks>
+    <searchlink id="101002">
+      <securitylevel>10</securitylevel>
+      <new>
+        <description termid='0'>Erniukas</description>
+        <link>HRMResource.aspx?BCAction=0</link>
+        <image>Solution.png</image>
+      </new>
+      <!-- this description is shown in preferences -->
+      <my>
+        <description termid='0'>Erniukas</description>
+        <link>HRMResources.aspx?View=0&amp;Involvement=0</link>
+      </my>
+      <search>
+        <link>HRMResourceSearch.aspx</link>
+        <action>HRMResourceSearch.aspx?SCAction=1&amp;Quick=1&amp;Menu=1</action>
+        <input>QuickSearch</input>
+        <selector>Resource</selector>
+      </search>
+    </searchlink>
+  </searchlinks>
+
+  <modules>
+    <module id='900'>
+      <description termid='0'>Erniukas</description>
+      <menupage>erniukas.aspx</menupage>
+   </module>
+</modules>
+
+  <applicationextensions>
+    <applicationextension application="CRMAccountCard.aspx">
+      <class name="AdvErniukasEvents.EmailSender" assembly="AdvErniukasEvents" />
+      <button id="advSendEmailBtn" caption="Send Email Nx" navigateurl="CRMAccountCard.aspx" onclick="SysSet('advSendEmail', 'send');SysSubmit();return false;" />
+      <cardsection id="csRelations">
+        <cardfield id="cfCSEvents" caption="Tavo mama:">
+          <inputfield id="CSEvents" column="TavoMama"
+             join="c.cnt_id = ContactID"
+             jointype="LeftOuter" jointable="AdvErnAcountExt" readonly="true" />
+        </cardfield>
+      </cardsection>
+    </applicationextension>
+    <applicationextension application="CRMAccountMaint.aspx">
+      <cardsection id="csRelations">
+        <cardfield id="cfCSEvents" caption="Tavo mama:">
+          <inputfield id="TavoMama" column="TavoMama" datasource="bc"/>
+        </cardfield>
+      </cardsection>
+    </applicationextension>
+  </applicationextensions>
+</customsolution>
+

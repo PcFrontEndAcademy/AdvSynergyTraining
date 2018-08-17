@@ -1,0 +1,6 @@
+C:\Synergy\bin\ExactHelpers.dll
+C:\Synergy\bin\ExactHelpers.pdb
+C:\Users\Administrator\Documents\ExactHelpers\obj\Debug\ExactHelpers.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\ExactHelpers\obj\Debug\ExactHelpers.dll
+C:\Users\Administrator\Documents\ExactHelpers\obj\Debug\ExactHelpers.pdb
+C:\Users\Administrator\Documents\ExactHelpers\obj\Debug\ExactHelpers.csprojResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+﻿<applications>
+   <application id="Erniukas">
+      <title>
+		<caption id="0">Visit Administrator account</caption>
+      </title>
+      <link>HRMResourceCard.aspx?ID=1</link>
+   </application>
+   <application id="VisitRequests">
+      <title>
+		<caption id="0">Visit Requests</caption>
+      </title>
+      <link>WflRequests.aspx?Show=1</link>
+   </application>
+</applications>

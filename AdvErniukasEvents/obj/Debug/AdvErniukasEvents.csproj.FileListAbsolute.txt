@@ -1,0 +1,6 @@
+C:\Synergy\bin\AdvErniukasEvents.dll
+C:\Synergy\bin\AdvErniukasEvents.pdb
+C:\Users\Administrator\Documents\AdvErniukasEvents\obj\Debug\AdvErniukasEvents.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\AdvErniukasEvents\obj\Debug\AdvErniukasEvents.dll
+C:\Users\Administrator\Documents\AdvErniukasEvents\obj\Debug\AdvErniukasEvents.pdb
+C:\Users\Administrator\Documents\AdvErniukasEvents\obj\Debug\AdvErniukasEvents.csprojResolveAssemblyReference.cache

@@ -1,0 +1,25 @@
+<menu>
+   <category id="Training">
+      <title>
+         <caption id="0">Solution</caption>
+      </title>
+      <categories>
+         <category id="Report">
+            <title>
+               <caption id="0">Setup</caption>
+            </title>
+            <categories>
+               <category id="Section">	
+                  <title>
+                     <caption id="0">Pages</caption>
+                  </title>
+					<applications>
+						<application id="Erniukas" />
+						<application id="VisitRequests" />
+					</applications>
+				</category>
+			</categories>
+		</category>
+      </categories>
+   </category>
+</menu>
