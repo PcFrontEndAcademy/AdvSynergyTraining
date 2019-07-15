@@ -1,0 +1,2 @@
+# AdvSynergyTraining
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d969e43e036c4715b0f8b5625a19a668)](https://app.codacy.com/app/PcFrontEndAcademy/AdvSynergyTraining?utm_source=github.com&utm_medium=referral&utm_content=PcFrontEndAcademy/AdvSynergyTraining&utm_campaign=Badge_Grade_Dashboard)
